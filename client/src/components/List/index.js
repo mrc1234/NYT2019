@@ -1,14 +1,15 @@
-import React from "react";
-import "./style.css";
+import React, { Component } from 'react';
+import './style.css';
 
 // This component exports both the List and ListItem components
 
 export const List = ({ children }) => (
-  <ul className="list-group">
-    {children}
-  </ul>
+  <ul className="list-group">{children}</ul>
 );
 
-export function ListItem({ children }) {
-  return <li className="list-group-item">{children}</li>;
+export class ListItem extends Component {
+  render() {
+    const { children } = this.props;
+    return <li className="list-group-item">{children}</li>;
+  }
 }

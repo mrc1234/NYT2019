@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './style.css';
 
-function Jumbotron({ children }) {
-  return <div className="jumbotron mt-4">{children}</div>;
+class Jumbotron extends Component {
+  render() {
+    const { children } = this.props;
+    return <div className="jumbotron mt-4">{children}</div>;
+  }
 }
 
 export default Jumbotron;
