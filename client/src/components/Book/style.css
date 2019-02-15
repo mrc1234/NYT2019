@@ -1,0 +1,17 @@
+.btn-container {
+  justify-content: flex-end;
+}
+
+.author {
+  flex-wrap: unset;
+}
+
+.list-group-item :first-child {
+  margin-right: 0 !important;
+}
+
+@media (max-width: 767px) {
+  .btn-container {
+    margin-bottom: 15px;
+  }
+}
